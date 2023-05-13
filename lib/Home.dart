@@ -16,7 +16,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         title: Row(
           children: [
             Image.asset(
-              '.idea/img/logoo.png',
+              'lib/img/logoo.png',
               width: 100.0,
               height: 80.0,
             ),
@@ -84,7 +84,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         child: Column(children: [
           Container(
            
-            child: Image.asset('.idea/img/15.jpg'),
+            child: Image.asset('lib/img/15.jpg'),
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -111,7 +111,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           ),
    SizedBox(height: 30.0),
                
-                Image.asset('.idea/img/12.jpg'), 
+                Image.asset('lib/img/12.jpg'), 
                  
           SizedBox(height: 30.0),
           Table(

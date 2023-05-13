@@ -61,26 +61,26 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - .idea/img/logoo.png
-    - .idea/img/av.png
-    - .idea/img/16.jpg
-    - .idea/img/15.jpg
-    - .idea/img/lo.jpg
-    - .idea/img/f.png
-    - .idea/img/i.png
-    - .idea/img/g.png
-    - .idea/img/1.jpg
-    - .idea/img/2.jpg
-    - .idea/img/3.jpg
-    - .idea/img/4.jpg
-    - .idea/img/5.jpg
-    - .idea/img/6.jpg
-    - .idea/img/7.jpg
-    - .idea/img/8.jpg
-    - .idea/img/9.jpg
-    - .idea/img/10.jpg
-    - .idea/img/11.jpg
-    - .idea/img/12.jpg
+    -  lib/img/logoo.png
+    -  lib/img/av.png
+    -  lib/img/16.jpg
+    -  lib/img/15.jpg
+    -  lib/img/lo.jpg
+    -  lib/img/f.png
+    -  lib/img/i.png
+    -  lib/img/g.png
+    -  lib/img/1.jpg
+    -  lib/img/2.jpg
+    -  lib/img/3.jpg
+    -  lib/img/4.jpg
+    -  lib/img/5.jpg
+    -  lib/img/6.jpg
+    -  lib/img/7.jpg
+    -  lib/img/8.jpg
+    -  lib/img/9.jpg
+    -  lib/img/10.jpg
+    -  lib/img/11.jpg
+    -  lib/img/12.jpg
 
   # assets:
   #   - images/a_dot_burr.jpeg

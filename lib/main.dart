@@ -8,6 +8,8 @@ import 'Cavalier.dart';
 import'Home.dart';
 import'Signup.dart';
 import 'Proprietaire.dart';
+import 'Entrenaire.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -17,8 +19,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/equi',
+        initialRoute: '/entre',
         routes: {
+         '/entre': (context) =>  Entrenaire(),
           '/pro': (context) => Proprietaire(),
          '/equi': (context) => Equipe(),
           '/cav': (context) => Cavalier(),

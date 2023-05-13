@@ -46,7 +46,7 @@ class Proprietaire extends StatelessWidget {
               SizedBox(
                 height: 40.0,
                 child: Image.asset(
-                  '.idea/img/logoo.png',
+                  'lib/img/logoo.png',
                   width: 150.0,
                   height: 100.0,
                 ),
