@@ -3,9 +3,9 @@ import 'package:flutter_cheveaux/Login.dart';
 import'package:flutter_cheveaux/RoundedIcon.dart';
 import 'package:flutter_cheveaux/text_filed_container.dart';
 
-class RoundedPasswordField extends StatelessWidget {
+class confirmer extends StatelessWidget {
   bool _isSecurePassword= true ;
-   RoundedPasswordField({ Key? key }) : super(key: key);
+   confirmer({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class RoundedPasswordField extends StatelessWidget {
               Icons.lock,
               color: Colors.white
             ),
-            hintText: "Mot de passe",
+            hintText: "Confirmer mot de passe",
             hintStyle:  TextStyle(fontFamily: 'OpenSans', color:Colors.white),
          
 

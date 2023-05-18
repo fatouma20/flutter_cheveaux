@@ -81,39 +81,51 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(children: [
+
+        child: Column(
+
+          children: [
+
+
           Container(
-           
-            child: Image.asset('lib/img/15.jpg'),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Text(
-              '   Bienvenue au Caval-Héros'
-              ' votre club équestre préféré à Monastir! '
-              'Nous sommes ravis de vous accueillir dans notre monde équestre,'
-              'où les chevaux et les cavaliers se rencontrent pour vivre des aventures inoubliables.'
-              ' Notre club est spécialisé dans les disciplines de saut d\'obstacle,'
-              'd\'endurance et de balades à cheval en mer. Nous offrons également des balades en forêt et sur'
-              'le parcours de golf local.'
-              'Que vous soyez débutant ou expérimenté, notre équipe de professionnels passionnés'
-              'est là pour vous aider à développer votre amour pour les chevaux tout en vous assurant'
-              'une expérience de qualité et en toute sécurité. '
-              'Venez découvrir le monde équestre avec Caval Héros.',
-              style: TextStyle(
-                // color: Color(0xff97bece),
-                backgroundColor: Colors.white.withOpacity(0.8),
-                fontSize: 16, fontFamily: 'serif',
-                fontWeight: FontWeight.bold,
+          width: double.infinity,
+          child: Stack(
+            children: [
+              FractionallySizedBox(
+                widthFactor:1.00,
+                child: Image.asset(
+                  'lib/img/15.jpg',
+                  fit: BoxFit.cover,
+                ),
               ),
-              textAlign: TextAlign.justify,
-            ),
+              Positioned.fill(
+                child: Center(
+                  child: Text(
+                    'Bienvenue au Caval-Héros'
+                    ''
+                   ' Votre club préféré à Monastir !\n\n\n'
+                    'Venez essayez nos spécialités les disciplines \n de saut' '  '
+                        'd\'obstacle, d\'endurance, et de balades à cheval en mer.\n'
+                    , style: TextStyle(
+                    color: Colors.white,
+
+                    fontSize: 18, fontFamily: 'serif',
+                    fontWeight: FontWeight.bold,
+                  ),
+                    textAlign: TextAlign.justify,
+                  ),
+
+                ),
+              ),
+            ],
           ),
-   SizedBox(height: 30.0),
-               
-                Image.asset('lib/img/12.jpg'), 
-                 
-          SizedBox(height: 30.0),
+        ),
+
+
+
+          
+       
+           SizedBox(height: 30.0),
           Table(
             border: TableBorder.all(color: Colors.brown,
                style: BorderStyle.solid,
@@ -576,8 +588,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           Padding(
             padding: const EdgeInsets.all(2.0),
               child: Container(
-        
-        
                     decoration: const BoxDecoration(
                        color: Color.fromARGB(52, 216, 198, 141),
                       borderRadius: BorderRadius.only(
@@ -705,8 +715,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               ],
             ),
             )  ),
-        ]),
-      ),
-    );
+       ] )
+      )
+     );
   }
 }

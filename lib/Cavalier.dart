@@ -103,7 +103,7 @@ child:Card(
         Text('Nom de cheval : Sam'),
       ],
     ),
-    trailing: Text('Groupe 1'),
+   
   ),
 )
 )   

@@ -1,40 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
-class Proprietaire extends StatelessWidget {
-  const Proprietaire({super.key});
-
+class Vetr2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar:
-          CurvedNavigationBar(backgroundColor: Color(0xff7a5050), items: [
-        GestureDetector(
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Color(0xff7a5050),
+        items: [
+          GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, '/home');
             },
-            child: Icon(Icons.home)),
-        GestureDetector(
+            child: Icon(Icons.home),
+          ),
+          GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, '/chek');
             },
-            child: Icon(Icons.add)),
-        GestureDetector(
+            child: Icon(Icons.add),
+          ),
+          GestureDetector(
             onTap: () {
               Navigator.pushNamed(context, '/login');
             },
-            child: Icon(Icons.chat_bubble_outline_outlined)),
-      ]),
+            child: Icon(Icons.chat_bubble_outline),
+          ),
+        ],
+      ),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(kToolbarHeight * 1.5),
         child: Container(
           decoration: BoxDecoration(
             color: Colors.brown,
             borderRadius: BorderRadius.only(
-               bottomLeft: Radius.circular(320.0),
-                bottomRight: Radius.circular(320.0),
-                topLeft: Radius.circular(320.0),
-                topRight: Radius.circular(320.0),
+              bottomLeft: Radius.circular(320.0),
+              bottomRight: Radius.circular(320.0),
+              topLeft: Radius.circular(320.0),
+              topRight: Radius.circular(320.0),
             ),
             border: Border.all(
               color: Color.fromARGB(255, 252, 246, 244),
@@ -42,35 +45,39 @@ class Proprietaire extends StatelessWidget {
             ),
           ),
           child: AppBar(
-            title: Row(children: [
-              SizedBox(
-                height: 40.0,
-                child: Image.asset(
-                  'lib/img/logoo.png',
-                  width: 150.0,
-                  height: 100.0,
-                ),
-              ),
-              SizedBox(
-                height: 40.0,
-                child: Text(
-                  'Propriétaire',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 252, 249, 248),
-                    fontSize: 25,
-                    fontFamily: 'serif',
-                    fontWeight: FontWeight.bold,
+            title: Row(
+              children: [
+                SizedBox(
+                  height: 40.0,
+                  child: Image.asset(
+                    'lib/img/logoo.png',
+                    width: 150.0,
+                    height: 100.0,
                   ),
                 ),
-              ),
-            ]),
+                SizedBox(
+                  height: 40.0,
+                  child: Text(
+                    'Vétérinaire',
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 252, 249, 248),
+                      fontSize: 25,
+                      fontFamily: 'serif',
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
             elevation: 0.0,
             backgroundColor: Color.fromARGB(0, 235, 244, 245),
           ),
         ),
       ),
-      body: SingleChildScrollView(
-       child: Padding(
+      body: SingleChildScrollView
+      (
+        
+        child: Padding(
           padding: const EdgeInsets.all(40.0),
           child: Column(
             children: [
@@ -112,7 +119,7 @@ class Proprietaire extends StatelessWidget {
                         TableCell(
                           child: Container(
                             height: 40,
-                    color: Color.fromARGB(255, 241, 245, 244),
+                            color: Color.fromARGB(255, 255, 255, 253),
                           ),
                         ),
                         TableCell(
@@ -138,22 +145,22 @@ class Proprietaire extends StatelessWidget {
                       children: [
                         TableCell(
                           child: Container(
-                            child:    Text('foin', style: TextStyle(
-                                color: Colors.black,
-                                fontFamily: 'OpenSans',
-                                fontSize: 10,
-                                fontWeight: FontWeight.w600)),
+                         child:    Text('foin', style: TextStyle(
+                              color: Colors.black,
+                              fontFamily: 'OpenSans',
+                              fontSize: 10,
+                              fontWeight: FontWeight.w600)),
                             height: 40,
                             color: Color.fromARGB(88, 121, 85, 72),
                           ),
                         ),
                         TableCell(
                           child: Container(
-                            child:    Text('Vitamine', style: TextStyle(
-                                color: Colors.black,
-                                fontFamily: 'OpenSans',
-                                fontSize: 10,
-                                fontWeight: FontWeight.w600)),
+                         child:    Text('Vitamine', style: TextStyle(
+                              color: Colors.black,
+                              fontFamily: 'OpenSans',
+                              fontSize: 10,
+                              fontWeight: FontWeight.w600)),
                             height: 40,
                             color: Color.fromARGB(88, 121, 85, 72),
                           ),
@@ -177,17 +184,17 @@ class Proprietaire extends StatelessWidget {
                         TableCell(
                           child: Container(
                             child: Text('', style: TextStyle(
-                                color: Colors.black,
-                                fontFamily: 'OpenSans',
-                                fontSize: 10,
-                                fontWeight: FontWeight.w600)),
+                              color: Colors.black,
+                              fontFamily: 'OpenSans',
+                              fontSize: 10,
+                              fontWeight: FontWeight.w600)),
                             height: 40,
                             color: Color.fromARGB(228, 241, 245, 244),
                           ),
                         ),
-                        TableCell(
+                         TableCell(
                           child: Container(
-                            height: 40,
+                         height: 40,
                             color: Color.fromARGB(228, 241, 245, 244),                         child:    Text('', style: TextStyle(
                               color: Colors.black,
                               fontFamily: 'OpenSans',
@@ -270,32 +277,10 @@ class Proprietaire extends StatelessWidget {
                   ],
                 ),
               ),
-           
-     SizedBox(height: 30.0),
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0),
-                  color: Colors.grey[200],
-                ),
-child:Card(
-  child: ListTile(
-    leading: Icon(Icons.access_time),
-    title: Text('Heure d\'entrainement'  '10:00'),
-    subtitle: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text('Date : 12 mai 2023'),
-        Text('Nom de cheval : Sam'),
-      ],
-    ),
-   
-  ),
-)
-)   ]),
-    ),
-    )
-    
-      );
-    
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }

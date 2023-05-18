@@ -55,7 +55,7 @@ class Entrenaire extends StatelessWidget {
               SizedBox(
                 height: 40.0,
                 child: Text(
-                  'Entrenaire',
+                  'Entraîneur',
                   style: TextStyle(
                     color: Color.fromARGB(255, 252, 249, 248),
                     fontSize: 25,
@@ -97,24 +97,23 @@ class Entrenaire extends StatelessWidget {
 child:Card(
   child: ListTile(
     leading: Icon(Icons.access_time),
-    title: Text('Heure d\'entrainement:'     '  ''5:00', style: TextStyle(fontSize:12),),
+    title: Text('Heure de cour:'     '  ''5:00', style: TextStyle(fontSize:12),),
     subtitle: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('Date : 12 mai 2023'),
-        Text('Nom de cheval : Jarray'),
+        Text('Groupe 1'),
       ],
     ),
-    trailing: Text('Groupe 1'),
-  ),
-)
-)   
-
-                  ]),
-  
-          ),
+        )
+        )
+       
         ),
-      );
+  
+        ]  ),
+        ),
+    )
+    );
   
   }
 }

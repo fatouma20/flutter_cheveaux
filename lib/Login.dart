@@ -21,13 +21,15 @@ class Login extends StatelessWidget {
             child: Stack(
               children: [
                  Container(
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        image: DecorationImage(
-          image: AssetImage('.idea/img/logoo.png'),
-                    ),
+
+      
+               height: 150,
+                     width: double.infinity,
+                decoration: BoxDecoration(
+                  image:DecorationImage(
+                    image:AssetImage('lib/img/logoo.png'),
                   ),
-                ),
+                  ) ),
                 Padding(
                   padding: const EdgeInsets.only(top: 320.0),
                   child: Container(
@@ -49,14 +51,7 @@ class Login extends StatelessWidget {
                         const SizedBox(
                           height: 20,
                         ),
-                        const Text(
-                          "Ou bien utiliser compte Gmail",
-                          style: TextStyle(
-                              color: Colors.grey,
-                              fontFamily: 'OpenSans',
-                              fontSize: 13,
-                              fontWeight: FontWeight.w600),
-                        ),
+                      
                         Form(
                           child: Column(
                             children: [
@@ -100,7 +95,7 @@ class Login extends StatelessWidget {
                                   Navigator.pushNamed(context, '/signup');
                                 },
                                 child: Text(
-                                  'S\'insecrire',
+                                  'S\'inscrire',
                                   style: TextStyle(
                                     fontSize: 19,
                                     color: Colors.black,

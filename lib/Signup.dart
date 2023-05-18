@@ -22,6 +22,16 @@ class Signup extends StatelessWidget {
           child: SingleChildScrollView(
             child: Stack(
               children: [
+                Container(
+
+
+                    height: 150,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      image:DecorationImage(
+                        image:AssetImage('lib/img/logoo.png'),
+                      ),
+                    ) ),
                 Padding(
                   padding: const EdgeInsets.only(top: 220.0),
                   child: Container(
@@ -35,6 +45,7 @@ class Signup extends StatelessWidget {
                         bottomLeft: Radius.circular(50),
                       ),
                     ),
+
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
